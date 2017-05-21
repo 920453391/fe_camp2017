@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background-image: url(bw.jpg);
+			position:absolute; 
+			top:0; 
+			left:0; 
+			height:100%; 
+			width:100%; 
+			background-position: center 0; 
+			background-repeat: no-repeat; 
+			background-attachment:fixed; 
+			background-size: cover; 
+		}
+		.btn{
+			position: relative ;
+			left: 70%;
+			top: 40%;			
+			width: 50px;
+			height: 140px;
+		}
+		.btn button{
+			position: relative;
+			width: 200px;
+			height:30%;
+		}
+		#xx{
+			padding: 0 ;
+			margin: 0 0 30px 0;
+			border-radius:5px;
+			border-style: none;
+			font-size: 200%;
+			color:#00CCCC;
+			text-align: left;
+			text-indent:1em;
+			background-image: url(btn-gray.png);
+		}
+		#bw{
+			padding: 0 ;
+			margin: 30px 0 0 0;
+			border-radius:5px;
+			border-style: none;
+			font-size: 200%;
+			color:#000000;
+			text-align: left;
+			text-indent:1em;
+			background-image: url(btn-blue.png);
+		}
+	</style>
+</head>
+<body id="body">
+		<div class="btn">
+			<button id="xx" onclick="fxx()" >小新</button>
+			<button id="bw" onclick="fbw()" >巴卫</button>
+		</div>	
+</body>
+	<script type="text/javascript">
+		var xx=document.getElementById("xx");
+		var bw=document.getElementById("bw");
+		var bo=document.getElementById("body");
+		function fxx()
+		{
+			bo.style.backgroundImage="url(xx.jpg)";			
+			xx.style.backgroundImage="url(btn-blue.png)";
+			xx.style.color="#000000";
+			bw.style.backgroundImage="url(btn-gray.png)";
+			bw.style.color="#00CCCC";
+		}
+		function fbw()
+		{
+			bo.style.backgroundImage="url(bw.jpg)";			
+			xx.style.backgroundImage="url(btn-gray.png)";
+			xx.style.color="#00CCCC";
+			bw.style.backgroundImage="url(btn-blue.png)";
+			bw.style.color="#000000";
+		}
+	</script>
+
+</html>
